@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 303.79 146.33">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #0511f2;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #0511f2;
+        stroke-miterlimit: 10;
+        stroke-width: .75px;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #f2f2f0;
+      }
+
+      .cls-5 {
+        fill: #36c;
+      }
+
+      .cls-6 {
+        font-family: Gorilla-Black, Gorilla;
+        font-size: 36px;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <text class="cls-6" transform="translate(13.78 40.38)"><tspan class="cls-4"><tspan x="0" y="0">Escola</tspan></tspan><tspan class="cls-1" x="0" y="43.2">d’Art </tspan><tspan class="cls-4" x="119.27" y="43.2">de </tspan><tspan class="cls-4" x="0" y="86.4">Tarragona</tspan><tspan class="cls-5" x="206.28" y="86.4"> </tspan><tspan class="cls-1" x="223.99" y="86.4">:) </tspan><tspan class="cls-5" x="272.3" y="86.4"> </tspan></text>
+    <rect class="cls-3" x="3.2" y="3.03" width="280.77" height="140.36"/>
+    <rect class="cls-2" x=".38" y=".38" width="5.64" height="5.31"/>
+    <rect class="cls-2" x=".38" y="140.53" width="5.64" height="5.12"/>
+    <rect class="cls-2" x=".38" y="71.39" width="5.64" height="6"/>
+    <rect class="cls-2" x="281.4" y=".68" width="5.14" height="5.31"/>
+    <rect class="cls-2" x="281.4" y="140.83" width="5.14" height="5.12"/>
+    <rect class="cls-2" x="281.4" y="71.74" width="5.14" height="6"/>
+    <rect class="cls-2" x="157.05" y=".34" width="5.31" height="6" transform="translate(156.37 163.04) rotate(-90)"/>
+    <rect class="cls-2" x="157.15" y="140.09" width="5.12" height="6" transform="translate(16.61 302.8) rotate(-90)"/>
+  </g>
+</svg>

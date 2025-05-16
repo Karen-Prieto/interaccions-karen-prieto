@@ -1,0 +1,601 @@
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background: #F2F2F0;
+    background: linear-gradient(90deg, rgba(242, 242, 240, 1) 0%, rgba(121, 188, 242, 0.91) 50%, rgba(242, 242, 240, 1) 100%);
+    background-size: 300% 400%;
+    animation: gradientMove 15s ease infinite;
+    overflow-x: hidden;
+
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@font-face {
+
+    font-family: "ClashDisplay";
+    src: url("../fuentes/ClashDisplay-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: "GeneralSans";
+    src: url("../fuentes/GeneralSans-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: "Chicago";
+    src: url("../fuentes/ChicagoFLF.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: "Gorilla";
+    src: url("../fuentes/Gorilla Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.hero {
+
+    text-align: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.logo {
+
+    height: 7em;
+    margin-top: 10em;
+
+}
+
+.subtitol {
+
+    font-family: "Gorilla";
+    font-size: 2em;
+    margin-top: 0;
+    cursor: context-menu;
+
+}
+
+.figures-layer {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 10;
+
+}
+
+.figura {
+
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: grab;
+    will-change: transform;
+    pointer-events: auto;
+    z-index: 100;
+
+}
+
+.color {
+
+    color: blue;
+    font-size: 1.2em;
+    cursor: none;
+    display: inline-block;
+    transition: transform 0.3s ease-out;
+}
+
+.color:hover {
+
+    animation: creativitatTilt 0.4s ease-out forwards;
+}
+
+@keyframes creativitatTilt {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(6deg);
+    }
+
+    100% {
+        transform: rotate(-4deg);
+    }
+
+}
+
+.ui-btn {
+
+    --btn-default-bg: #39FF14;
+    --btn-hover-bg: #D400FF;
+    --btn-padding: 15px 20px;
+    --btn-transition: 0.3s ease-in-out;
+    --btn-letter-spacing: .1rem;
+    --btn-animation-duration: 1.2s;
+    --btn-shadow-color: rgba(57, 255, 20, 0.35);
+    --btn-shadow: 0 0 12px var(--btn-shadow-color);
+    --hover-btn-color: white;
+    --default-btn-color: black;
+    --font-size: 16px;
+    --font-weight: 600;
+    --font-family: Menlo, Roboto Mono, "Chicago";
+
+}
+
+.ui-btn {
+
+    margin-top: 3em;
+    box-sizing: border-box;
+    padding: var(--btn-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--default-btn-color);
+    font: var(--font-weight) var(--font-size) var(--font-family);
+    background: var(--btn-default-bg);
+    border: none;
+    cursor: pointer;
+    transition: var(--btn-transition);
+    overflow: hidden;
+    box-shadow: var(--btn-shadow);
+    text-decoration: none;
+
+}
+
+.ui-btn span {
+
+    letter-spacing: var(--btn-letter-spacing);
+    transition: var(--btn-transition);
+    box-sizing: border-box;
+    position: relative;
+    background: inherit;
+
+}
+
+.ui-btn span::before {
+
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+
+}
+
+.ui-btn:hover,
+.ui-btn:focus {
+
+    background: var(--btn-hover-bg);
+
+}
+
+.ui-btn:hover span,
+.ui-btn:focus span {
+
+    color: var(--hover-btn-color);
+
+}
+
+.ui-btn:hover span::before,
+.ui-btn:focus span::before {
+
+    animation: chitchat linear both var(--btn-animation-duration);
+
+}
+
+@keyframes chitchat {
+
+    0% {
+        content: "#";
+    }
+
+    5% {
+        content: ".";
+    }
+
+    10% {
+        content: "^{";
+    }
+
+    15% {
+        content: "-!";
+    }
+
+    20% {
+        content: "#$_";
+    }
+
+    25% {
+        content: "№:0";
+    }
+
+    30% {
+        content: "#{+.";
+    }
+
+    35% {
+        content: "@}-?";
+    }
+
+    40% {
+        content: "?{4@%";
+    }
+
+    45% {
+        content: "=.,^!";
+    }
+
+    50% {
+        content: "?2@%";
+    }
+
+    55% {
+        content: "\;1}]";
+    }
+
+    60% {
+        content: "?{%:%";
+        right: 0;
+    }
+
+    65% {
+        content: "|{f[4";
+        right: 0;
+    }
+
+    70% {
+        content: "{4%0%";
+        right: 0;
+    }
+
+    75% {
+        content: "'1_0<";
+        right: 0;
+    }
+
+    80% {
+        content: "{0%";
+        right: 0;
+    }
+
+    85% {
+        content: "]>'";
+        right: 0;
+    }
+
+    90% {
+        content: "4";
+        right: 0;
+    }
+
+    95% {
+        content: "2";
+        right: 0;
+    }
+
+    100% {
+        content: "";
+        right: 0;
+    }
+
+}
+
+.pegatina {
+
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    width: 150px;
+    transform: rotate(15deg);
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+.carita {
+
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    width: 135px;
+    transform: rotate(-15deg);
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+.eadt {
+
+    position: absolute;
+    top: 205px;
+    left: 180px;
+    width: 200px;
+    transform: rotate(-5deg);
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+.intro {
+
+    position: relative;
+    padding: 4em;
+    font-size: 2em;
+    font-family: "Chicago";
+    text-align: center;
+    margin-bottom: 50px;
+    cursor: context-menu;
+
+}
+
+
+.colorintro {
+
+    color: blue;
+    font-size: 1.2em;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.colorintro::after {
+
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.4s ease;
+
+}
+
+.colorintro:hover {
+
+    color: darkblue;
+
+}
+
+.colorintro:hover::after {
+
+    width: 100%;
+
+}
+
+.animar {
+
+    font-size: 1.2em;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+
+}
+
+.animar:hover {
+
+    color: #39FF14;
+    transform: scale(1.1);
+    text-shadow: 0 0 6px blue, 0 0 12px blue;
+
+}
+
+
+
+.caritados {
+
+    position: absolute;
+    top: 370px;
+    right: 100px;
+    width: 180px;
+    transform: rotate(15deg);
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+.atrece {
+
+    position: absolute;
+    top: 360px;
+    right: 200px;
+    width: 120px;
+    transform: rotate(-13deg);
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+
+
+h2 {
+
+    font-family: "Chicago";
+    font-size: 2em;
+    color: black;
+    transition: color 0.3s ease;
+    cursor: pointer;
+
+}
+
+h2:hover {
+
+    color: blue;
+
+}
+
+p {
+
+    top: 2px;
+    font-family: "GeneralSans";
+    font-size: 1.1em;
+    cursor: context-menu;
+
+}
+
+main {
+
+    min-height: 100vh;
+
+}
+
+#llista-episodis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 4rem 2rem;
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.episodi {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    background: white;
+    border-radius: 0.8em;
+    padding: 2em;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border: 4px solid #1e3a8a;
+    transition: transform 0.3s ease, background 0.3s ease;
+
+}
+
+.episodi:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.episodi:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.episodi audio {
+
+    width: 100%;
+}
+
+
+.episodi.actiu {
+
+    background: #aaa;
+
+}
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+    #llista-episodis {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 800px;
+        padding: 2em 1em;
+        text-align: center;
+    }
+
+    .logo {
+        height: 2em;
+        margin-top: 1em;
+    }
+
+    .subtitol {
+        font-size: 1em;
+        margin-top: 1em;
+    }
+
+    .ui-btn {
+        margin-top: 2em;
+        padding: 12px 20px;
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .intro {
+        font-size: 1.2em;
+        padding: 2em 1em;
+        height: 400px;
+    }
+
+    .episodi {
+        padding: 1.5em;
+    }
+
+    .episodi h2 {
+        font-size: 1.2em;
+    }
+
+    .figura {
+        width: 60px;
+        height: 60px;
+    }
+
+    .pegatina,
+    .carita,
+    .eadt,
+    .caritados,
+    .atrece{
+        
+        display: none;
+    }
+}
